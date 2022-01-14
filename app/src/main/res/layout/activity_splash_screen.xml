@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sign_up"
+    tools:context=".Activities.SplashScreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/dp200"
+            android:layout_height="@dimen/dp200"
+            android:scaleType="fitXY"
+           android:foregroundTint="@color/darkblue"
+            android:src="@drawable/logo2"
+            android:tint="@color/white"
+            />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:progressTint="@color/white"
+            android:secondaryProgressTint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+    </LinearLayout>
+</RelativeLayout>

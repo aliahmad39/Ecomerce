@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pf-Monthly-Task</string>
+    <string name="online_store">Online Store</string>
+    <string name="data_not_found">Data not Found!</string>
+    <string name="try_again">Try Again!</string>
+    <string name="available_stock_290">Available Stock : 290</string>
+    <string name="description">Description</string>
+    <string name="rs_217">Rs:217</string>
+    <string name="order">Order</string>
+    <string name="category">Category :</string>
+    <string name="jewelry">jewelry</string>
+    <string name="product_rating">Product Rating :</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="product_not_found">Product not Found!</string>
+    <string name="product_detail">Product Detail</string>
+</resources>

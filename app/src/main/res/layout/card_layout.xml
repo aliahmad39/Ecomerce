@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/dp5"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp6"
+        app:cardElevation="@dimen/dp8">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp8"
+            android:background="@drawable/bg_cart">
+
+
+<LinearLayout
+    android:id="@+id/layout_title1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/red"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:text="@string/description"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold|italic" />
+</LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_title1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/rs_217"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp130"
+                android:layout_below="@id/layout_count"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+               android:foreground="#20F4F4F4"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/tvProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivProduct"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                 />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
